@@ -31,17 +31,20 @@ This project provides a ready-to-use R environment in a Docker container, with:
 ### Quick Start
 
 1. Clone this repository:
+
    ```bash
-   git clone <repository-url>
+   git clone  https://github.com/htlin222/rocker.git
    cd Rdocker
    ```
 
 2. Build and run the container:
+
    ```bash
    ./run-docker.sh --build
    ```
 
 3. For subsequent runs (without rebuilding):
+
    ```bash
    ./run-docker.sh
    ```
@@ -55,11 +58,13 @@ Once inside the container, you'll be in a ZSH shell with access to:
 - Output directory for saving results
 
 Run R scripts directly:
+
 ```bash
 Rscript your_script.R
 ```
 
 Or start an interactive R session:
+
 ```bash
 R
 ```
@@ -74,6 +79,7 @@ To add new R packages:
 ## Portability
 
 This environment is designed to be portable across systems:
+
 - Specific R version (4.3.2) ensures consistency
 - pacman handles package dependencies
 - Docker isolates the environment from the host system
